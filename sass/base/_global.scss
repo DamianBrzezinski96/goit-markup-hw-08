@@ -1,0 +1,25 @@
+body {
+  font-family: $main-font;
+  background-color: $third-color;
+  color: $main-color;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,51 @@
+.teammate {
+  background-color: $third-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+  padding-bottom: 30px;
+
+  &__photo {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+  }
+  &__name {
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  &__name,
+  &__spec {
+    font-size: 16px;
+    line-height: 1.187;
+    letter-spacing: 0.03em;
+  }
+  &__spec {
+    color: $second-color;
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 960px) {
+  .teammate {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 960px) {
+  .teammate {
+    flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media (min-width: 961px){
+  .teammate:not(:first-child) {
+    margin-left: 30px;
+  }
+  .teammate__photo {
+    max-width: 270px;
+    max-height: 260px;
+  }
+}
